@@ -1,3 +1,0 @@
-function show(id){document.getElementById(id).classList.remove('hidden');}
-function recomendar(){let e=estado.value,n=necesidad.value,z='📚 Lectura';if(e=='Muy estresado'||e=='Cansado'||n=='Descansar')z='🛋️ Descanso';else if(n=='Expresar mi creatividad')z='🎨 Creatividad';entrada(z);}
-function entrada(z){let d=new Date();document.getElementById('result').classList.remove('hidden');document.getElementById('result').innerHTML='<h2>Entrada registrada</h2><p>Zona: '+z+'</p><p>'+d.toLocaleString()+'</p>';window.scrollTo(0,document.body.scrollHeight);}

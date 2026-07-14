@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CraftTime Room</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/6c54f61d42.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- PANTALLA DE INICIO -->
+<!-- ========================= -->
+
+<section id="inicio" class="pantalla">
+
+<div class="contenedor">
+
+<h1>CraftTime Room</h1>
+
+<p class="subtitulo">
+Tu espacio para crear, relajarte y conectar contigo mismo.
+</p>
+
+<div class="botones">
+
+<button id="btnRecomendacion">
+
+<i class="fa-solid fa-brain"></i>
+
+Recomendación de actividad
+
+</button>
+
+<button id="btnAutonoma">
+
+<i class="fa-solid fa-house"></i>
+
+Zona Autónoma
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- RECOMENDACIÓN -->
+<!-- ========================= -->
+
+<section id="recomendacion" class="pantalla oculto">
+
+<div class="contenedor">
+
+<h2>¿Cómo te sientes hoy?</h2>
+
+<form id="quiz">
+
+<div class="pregunta">
+
+<h3>1. ¿Cómo te sientes en este momento?</h3>
+
+<select id="p1">
+
+<option>Muy estresado</option>
+<option>Cansado</option>
+<option>Aburrido</option>
+<option>Tranquilo</option>
+<option>Feliz</option>
+
+</select>
+
+</div>
+
+<div class="pregunta">
+
+<h3>2. ¿Qué necesitas ahora?</h3>
+
+<select id="p2">
+
+<option>Descansar</option>
+<option>Distraerme</option>
+<option>Expresar mi creatividad</option>
+<option>Compartir con mis amigos</option>
+<option>Concentrarme</option>
+
+</select>
+
+</div>
+
+<div class="pregunta">
+
+<h3>3. ¿Qué ambiente prefieres?</h3>
+
+<select id="p3">
+
+<option>Silencioso</option>
+<option>Con música</option>
+<option>Creativo</option>
+<option>Divertido</option>
+
+</select>
+
+</div>
+
+<div class="pregunta">
+
+<h3>4. Después del descanso quiero sentirme...</h3>
+
+<select id="p4">
+
+<option>Más tranquilo</option>
+<option>Con energía</option>
+<option>Más feliz</option>
+<option>Más concentrado</option>
+
+</select>
+
+</div>
+
+<button type="button" id="calcular">
+
+Descubrir mi zona
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- RESULTADO -->
+<!-- ========================= -->
+
+<section id="resultado" class="pantalla oculto">
+
+<div class="contenedor">
+
+<h2>Zona recomendada</h2>
+
+<h1 id="zonaResultado"></h1>
+
+<p id="descripcionResultado"></p>
+
+<button id="ingresar">
+
+Ingresar al salón
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ZONA AUTÓNOMA -->
+<!-- ========================= -->
+
+<section id="autonoma" class="pantalla oculto">
+
+<div class="contenedor">
+
+<h2>Escoge la zona que deseas utilizar</h2>
+
+<div class="mapa">
+
+<div class="zona" data-zona="Zona Descanso">
+
+🛋️
+
+<p>Descanso</p>
+
+</div>
+
+<div class="zona" data-zona="Zona Creativa">
+
+🎨
+
+<p>Creatividad</p>
+
+</div>
+
+<div class="zona" data-zona="Zona Lectura">
+
+📚
+
+<p>Lectura</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- RECEPCIÓN -->
+<!-- ========================= -->
+
+<section id="recepcion" class="pantalla oculto">
+
+<div class="contenedor">
+
+<h1>
+
+✅ Entrada registrada
+
+</h1>
+
+<p id="mensajeRecepcion"></p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- INFORMACIÓN -->
+<!-- ========================= -->
+
+<section id="informacion">
+
+<div class="contenedor">
+
+<h2>¿Qué es CraftTime Room?</h2>
+
+<p>
+
+CraftTime Room es un emprendimiento social que busca brindar a los estudiantes de 8.° a 11.° un espacio seguro y personalizado donde puedan relajarse según sus preferencias, disminuyendo el estrés académico mediante actividades recreativas.
+
+</p>
+
+<h2>Objetivo</h2>
+
+<p>
+
+Promover el bienestar emocional de los estudiantes mediante espacios recreativos adaptados a diferentes formas de relajación.
+
+</p>
+
+<h2>Beneficios</h2>
+
+<ul>
+
+<li>Reduce el estrés académico.</li>
+
+<li>Favorece la salud mental.</li>
+
+<li>Respeta diferentes formas de relajación.</li>
+
+<li>Mejora la concentración.</li>
+
+<li>Promueve un ambiente escolar saludable.</li>
+
+</ul>
+
+<h2>Dato científico</h2>
+
+<p>
+
+La Organización Mundial de la Salud señala que promover el bienestar emocional en las escuelas mejora el aprendizaje, la convivencia y el desarrollo integral de los estudiantes.
+
+</p>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
